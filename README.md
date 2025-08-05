@@ -4,7 +4,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3-%233776AB?logo=python" alt="Python 3">
   <img src="https://img.shields.io/badge/Linux-Cinnamon-darkgreen?logo=linux" alt="Linux Cinnamon">
-  <img src="https://img.shields.io/badge/Status-Chilling-blueviolet" alt="Status">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="JavaScript">
 </div>
 
 ---
@@ -33,4 +33,8 @@ Right-click desklet → Configure:
 Check `~/.cinnamon/glass.log` or open an issue
 
 ---
-*Just a hobby project • Not affiliated with Aniworld*
+
+### ⚠️ Disclaimer
+This is a hobby project for personal use. I'm not responsible for any issues, damages, or violations that may arise from using this desklet. Use at your own risk and respect Aniworld's terms of service.
+
+*Not affiliated with Aniworld • Use responsibly*
