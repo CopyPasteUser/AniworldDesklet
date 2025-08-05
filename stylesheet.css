@@ -29,15 +29,15 @@
   background: #66ccff;
   border-radius: 6px;
   color: black;
-  /* Wichtig: Display auf flex und zentrieren */
+  
   display: flex;
-  justify-content: center;  /* horizontal zentrieren */
-  align-items: center;      /* vertikal zentrieren */
+  justify-content: center;  
+  align-items: center;      
 }
 
 
 .button-label {
-  /* Breite 100% hilft, aber ist nicht zwingend nötig */
+ 
   width: 50%;
   text-align: center;
 }

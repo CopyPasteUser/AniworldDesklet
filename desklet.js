@@ -130,13 +130,13 @@ AniWorldDesklet.prototype = {
         if (file.query_exists(null)) {
             setImage();
         } else {
-            // 📥 Download mit wget und Browser-User-Agent
+          
             let userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
             let cmd = `wget --timeout=10 --user-agent="${userAgent}" -O "${imagePath}" "${anime.bild}"`;
 
             GLib.spawn_command_line_async(cmd);
 
-            // ⏳ Warte 1 Sekunde, dann versuche das Bild zu setzen
+            
             Mainloop.timeout_add(1000, () => {
                 if (file.query_exists(null)) setImage();
                 return false;

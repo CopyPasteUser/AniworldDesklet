@@ -8,29 +8,29 @@ from datetime import datetime
 
 LOGIN_URL = "https://aniworld.to/login"
 BASE_URL = "https://aniworld.to"
-COOKIE_PATH = "/home/simon/.local/share/cinnamon/desklets/AniworldDesklet/cookies.json"
-OUTPUT_JSON = "/home/simon/.local/share/cinnamon/desklets/AniworldDesklet/recentAniworldFetch.json"
-LOG_PATH = "/home/simon/.local/share/cinnamon/desklets/AniworldDesklet/aniworldScrapeLogs.txt"
+COOKIE_PATH = ".local/share/cinnamon/desklets/AniworldDesklet/cookies.json"
+OUTPUT_JSON = ".local/share/cinnamon/desklets/AniworldDesklet/recentAniworldFetch.json"
+LOG_PATH = ".local/share/cinnamon/desklets/AniworldDesklet/aniworldScrapeLogs.txt"
 
-EMAIL = "mightygerkin@gmail.com"
-PASSWORD = "Ehre88!lol"
+EMAIL = ""   #placeholder obviously
+PASSWORD = ""
 
 def write_log_block(lines):
     """Fügt neuen Logblock hinzu und hält Datei bei max 5000 Zeilen."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     block = [f"[🕓 {timestamp}] === BEGIN ==="] + lines + [f"[🕓 {timestamp}] === ENDE ===\n"]
 
-    # Alte Logs lesen
+    
     if os.path.exists(LOG_PATH):
         with open(LOG_PATH, "r", encoding="utf-8") as f:
             existing = f.readlines()
     else:
         existing = []
 
-    # Neue anhängen
+    
     new_log = existing + [line + "\n" if not line.endswith("\n") else line for line in block]
 
-    # Blockweise trennen
+    
     blocks = []
     current = []
     for line in new_log:
@@ -42,7 +42,7 @@ def write_log_block(lines):
     if current:
         blocks.append(current)
 
-    # Kürzen auf 5000 Zeilen (ganze Blöcke)
+   
     trimmed_blocks = []
     total_lines = 0
     for block in reversed(blocks):
