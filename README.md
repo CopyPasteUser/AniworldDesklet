@@ -1,5 +1,4 @@
 # 🍥 AniworldDesklet
-
 *A tiny anime desklet for Linux (Cinnamon tested)*  
 
 <div align="center">
@@ -19,5 +18,19 @@
 ```bash
 git clone https://github.com/CopyPasteUser/AniworldDesklet.git
 cd AniworldDesklet
-python3 -m pip install -r requirements.txt
-python3 main.py
+cp -r . ~/.local/share/cinnamon/desklets/AniworldDesklet/
+```
+
+Enable in *System Settings → Desklets*
+
+### 🎨 Configuration
+Right-click desklet → Configure:
+- Update interval
+- Display theme
+- Watchlist sync
+
+### 🐛 Issues?
+Check `~/.cinnamon/glass.log` or open an issue
+
+---
+*Just a hobby project • Not affiliated with Aniworld*
