@@ -1,0 +1,60 @@
+.container {
+  background: rgba(20, 20, 20, 0.7);
+  padding: 12px;
+  border-radius: 10px;
+  height: auto;
+  width: 250px;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc66;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.item {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.button {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #66ccff;
+  border-radius: 6px;
+  color: black;
+  /* Wichtig: Display auf flex und zentrieren */
+  display: flex;
+  justify-content: center;  /* horizontal zentrieren */
+  align-items: center;      /* vertikal zentrieren */
+}
+
+
+.button-label {
+  /* Breite 100% hilft, aber ist nicht zwingend nötig */
+  width: 50%;
+  text-align: center;
+}
+
+
+.arrow {
+  margin: 0 4px;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.series-image {
+  margin: 0 8px;
+}
+
+
+.series-image {
+  margin: 0 8px;
+  border-radius: 6px;
+}
